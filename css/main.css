@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: arial;
+}
+
+#content-higher{
+  padding:50px;
+}
+
+div h1{
+  
+  display: inline-block;
+  position: relative;
+  left: 45%;
+ 
+}
+.board {
+margin: 100px auto 0;
+border-collapse: collapse;
+
+}
+.board td{
+  height: 100px;
+  width: 100px;
+  border: 3px solid gray;
+  text-align: center;
+  font-size: 42px;
+  background-color:#A2D9CE;
+}
+
+/* La pseudo-clase :first-child  representa cualquier elemento que sea el primer elemento hijo del elemento padre. */
+/*Todos los td de la primera etiqueta tr*/
+tr:first-child td{
+  border-top: 0;
+ 
+}
+/*Esto quitara el borde inferior a todos los td de la ultima etiqueta tr*/
+tr:last-child td{
+  border-bottom: 0;
+  
+} 
+
+tr td:first-child {
+  border-left: 0;
+
+}
+tr td:last-child {
+  border-right:0;
+}
+#content-lower{
+  padding:50px;
+  text-align: center;
+  
+}
+
+.btnReset {
+ border-radius: 5px  ;
+ border: 2px solid #0E6655 ;
+ padding: 10px;
+ color:#0E6655 ;
+ font-size: 18px;
+}
+img {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 45%;
+}

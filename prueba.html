@@ -1,0 +1,20 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button>prueba</button>
+        <script>
+        var button = document.querySelector('button');
+        function randomNumber(number) {
+         return Math.floor(Math.random()*(number + 1));
+        }
+  
+        button.onclick = function() {
+         var randomColor = 'rgb(' + randomNumber(255) + ',' + randomNumber(255) + ',' + randomNumber(255) + ')';
+         document.body.style.backgroundColor = randomColor;
+        }
+        </script>
+    </body>
+
+</html>
